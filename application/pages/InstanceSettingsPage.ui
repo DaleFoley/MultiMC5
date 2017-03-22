@@ -161,8 +161,11 @@
              <property name="text">
               <string>Low</string>
              </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroupWindowsMemPriority</string>
+             </attribute>
             </widget>
-            <widget class="QRadioButton" name="radioButtonMediumMemory">
+            <widget class="QRadioButton" name="radioButtonNormalMemory">
              <property name="geometry">
               <rect>
                <x>10</x>
@@ -178,12 +181,15 @@
               </sizepolicy>
              </property>
              <property name="text">
-              <string>Medium</string>
+              <string>Normal</string>
              </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroupWindowsMemPriority</string>
+             </attribute>
             </widget>
             <widget class="QRadioButton" name="radioButtonHighMemory">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="geometry">
               <rect>
@@ -205,6 +211,9 @@
              <property name="checked">
               <bool>true</bool>
              </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroupWindowsMemPriority</string>
+             </attribute>
             </widget>
            </widget>
           </item>
@@ -656,4 +665,7 @@
  </tabstops>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroupWindowsMemPriority"/>
+ </buttongroups>
 </ui>

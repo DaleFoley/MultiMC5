@@ -80,12 +80,14 @@ void InstanceSettingsPage::applySettings()
 		m_settings->set("MinMemAlloc", ui->minMemSpinBox->value());
 		m_settings->set("MaxMemAlloc", ui->maxMemSpinBox->value());
 		m_settings->set("PermGen", ui->permGenSpinBox->value());
+        m_settings->set("WindowsMemoryPriority", ui->buttonGroupWindowsMemPriority->checkedButton()->text());
 	}
 	else
 	{
 		m_settings->reset("MinMemAlloc");
 		m_settings->reset("MaxMemAlloc");
 		m_settings->reset("PermGen");
+        m_settings->reset("WindowsMemoryPriority");
 	}
 
 	// Java Install Settings
