@@ -67,7 +67,7 @@ InstanceWindow::InstanceWindow(InstancePtr instance, QWidget *parent)
 
 		m_killButton = new QPushButton();
 		horizontalLayout->addWidget(m_killButton);
-		setKillButton(m_instance->isRunning());
+        setKillButton(m_instance->isRunning());
 		connect(m_killButton, SIGNAL(clicked(bool)), SLOT(on_btnKillMinecraft_clicked()));
 
 		m_closeButton = new QPushButton();

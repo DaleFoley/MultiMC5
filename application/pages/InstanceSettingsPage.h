@@ -63,9 +63,7 @@ private slots:
 
 	void applySettings();
 	void loadSettings();
-
-	void checkerFinished();
-
+	void checkerFinished();    
 private:
 	Ui::InstanceSettingsPage *ui;
 	BaseInstance *m_instance;

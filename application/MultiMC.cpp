@@ -1166,8 +1166,8 @@ InstanceWindow *MultiMC::showInstanceWindow(InstancePtr instance, QString page)
 		window->activateWindow();
 	}
 	else
-	{
-		window = new InstanceWindow(instance);
+    {
+        window = new InstanceWindow(instance);
 		m_openWindows ++;
 		connect(window, &InstanceWindow::isClosing, this, &MultiMC::on_windowClose);
 	}

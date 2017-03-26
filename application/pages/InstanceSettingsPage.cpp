@@ -80,7 +80,7 @@ void InstanceSettingsPage::applySettings()
 		m_settings->set("MinMemAlloc", ui->minMemSpinBox->value());
 		m_settings->set("MaxMemAlloc", ui->maxMemSpinBox->value());
 		m_settings->set("PermGen", ui->permGenSpinBox->value());
-        m_settings->set("WindowsMemoryPriority", ui->buttonGroupWindowsMemPriority->checkedButton()->text());
+        m_settings->set("WindowsMemoryPriority", ui->buttonGroup->checkedButton()->text());
 	}
 	else
 	{
